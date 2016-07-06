@@ -1,0 +1,28 @@
+package:
+  name: sodapy
+  version: "1.3.0"
+
+source:
+  fn: sodapy-1.3.0.tar.gz
+  url: https://pypi.python.org/packages/s/sodapy/sodapy-1.3.0.tar.gz
+  md5: 96e02f2c0f2cfd176543aea4c5a18b67
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  imports:
+    - sodapy
+
+about:
+  home: https://github.com/xmunoz/sodapy
+  license: MIT
+  summary: Python bindings for the Socrata Open Data API 
